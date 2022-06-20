@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Mario</title>
+    <link rel="stylesheet" href="/estilo/style.css">
+    
+    <style>
+        @font-face {
+                font-family: 'pixel';
+                src: url('fontes/DePixelBreit.otf') format('opentype');
+        }
+
+        .scoretext {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.37);
+            position: absolute;
+            top: 20px;
+            right: 50px;
+            font-family: 'pixel';
+            font-size: 30px;
+            z-index: 1;
+            color: white;
+            text-shadow: 2px 2px black;
+            }
+    </style>
+</head>
+<body>
+    <div class="gameboard">
+        <p class="nome"><a href="https://www.instagram.com/jv.marquardt/" target="_blank" rel="external">João Marquardt</a></p>
+        <p class="scoretext"></p>
+        <img src="" class="gameovertext">
+        <img src="imagens/clouds.png" class="nuvens">
+        <img src="imagens/mario.gif" class="mario">
+        <img src="imagens/pipe.png" class="tubo">
+    </div>
+    
+    <audio preload="auto" loop autoplay>
+        <source src="musica/musica-tema-mario.mp3" type="audio/mpeg">
+        <source src="musica/musica-tema-mario.ogg" type="audio/ogg">
+    </audio>
+
+    <script src="logica/script.js"></script>
+</body>
+</html>
