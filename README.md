@@ -1,2 +1,2 @@
 # Atenção ‼️
-O jogo roda apenas 
+O jogo roda apenas no computador
