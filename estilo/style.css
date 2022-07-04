@@ -1,130 +1,139 @@
-@font-face {
-    font-family: 'pixel';
-    src: url('fontes/dogica.otf') format('opentype');
-}
-
 .scoretext {
-border-radius: 5px;
-padding: 10px;
-background-color: rgba(0, 0, 0, 0.37);
-position: absolute;
-top: 20px;
-right: 50px;
-font-family: 'pixel';
-font-size: 30px;
-z-index: 1;
-color: white;
-text-shadow: 2px 2px black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.37);
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-family: 'pixel';
+    font-size: 30px;
+    z-index: 1;
+    color: white;
+    text-shadow: 2px 2px black;
 }
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
 .gameboard {
-position: relative;
-width: 100%;
-height: 100vh;
-margin: 0 auto;
-background-image: linear-gradient(to bottom, #87ceeb, #e0f6ff);
-overflow: hidden;
-border-bottom: 30px solid green;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, #87ceeb, #e0f6ff);
+    overflow: hidden;
+    border-bottom: 30px solid green;
 }
 
 .tubo {
-position: absolute;
-bottom: 0;
-width: 70px;
-animation: tubo-animacao 1.5s infinite linear;
+    position: absolute;
+    bottom: 0;
+    width: 70px;
+    animation: tubo-animacao 1.5s infinite linear;
 }
 
 .mario {
-position: absolute;
-width: 180px;
-bottom: 0px;
+    position: absolute;
+    width: 180px;
+    bottom: 0px;
 }
 
 .pulo {
-animation: mario-pulo 500ms ease-out;
+    animation: mario-pulo 500ms ease-out;
 }
 
 .nuvens {
-top: 50px;
-width: 500px;
-position: absolute;
-animation: nuvem-animacao 20s infinite linear;
+    top: 50px;
+    width: 500px;
+    position: absolute;
+    animation: nuvem-animacao 20s infinite linear;
 }
 
 .gameovertext {
-position: absolute;
-width: 500px;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-z-index: 1;
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .nome {
-position: absolute;
-top: 10px;
-left: 10px;
-color: rgb(56, 48, 48);
-font-family: Arial, Helvetica, sans-serif;
-font-style: italic;
-font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    color: rgb(56, 48, 48);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    transform: translate(-50%);
 }
 
 .nome > a {
-text-decoration: none;
-color: rgb(56, 48, 48);
+    text-decoration: none;
+    color: rgb(56, 48, 48);
 }
 
 .nome > a:hover {
-text-decoration: underline;
-color: rgb(29, 24, 24);
+    text-decoration: underline;
+    color: rgb(29, 24, 24);
+}
+
+.botao-menu {
+    position: absolute;
+    height: 6.5%;
+    top: 20px;
+    left: 50px;
+}
+
+.botao-menu:hover {
+    cursor: pointer;
 }
 
 @keyframes tubo-animacao {
-from {
-    right: -70px;
+    from {
+        right: -70px;
+    }
+
+    to {
+        right: 100%;
+    }
 }
 
-to {
-    right: 100%;
-}
-}
+
 
 @keyframes mario-pulo {
-0% {
-    bottom: 0;
-}
+    0% {
+        bottom: 0;
+    }
 
-40% {
-    bottom: 190px;
-}
+    40% {
+        bottom: 190px;
+    }
 
-50% {
-    bottom: 190px;
-}
+    50% {
+        bottom: 190px;
+    }
 
-60% {
-    bottom: 190px;
-}
+    60% {
+        bottom: 190px;
+    }
 
-100% {
-    bottom: 0;
-}
-}
+    100% {
+        bottom: 0;
+    }
+    }
 
-@keyframes nuvem-animacao {
-from {
-    right: -550px;
-}
+    @keyframes nuvem-animacao {
+    from {
+        right: -550px;
+    }
 
-to {
-    right: 100%;
-}
+    to {
+        right: 100%;
+    }
 }
